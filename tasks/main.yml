@@ -1,5 +1,5 @@
 ---
-# TODO: integrate with monit + beaver
+# TODO: integrate with monit
 
 - name: Install latest kernel extras for Ubuntu 13.04+
   apt:
