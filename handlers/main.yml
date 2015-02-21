@@ -1,10 +1,7 @@
 ---
-- name: Start Service | Docker
+- name: Reload Service | docker
   service:
-    name: docker
-    state: started
-
-- name: Reload Service | Docker
-  service:
-    name: docker
     state: reloaded
+    name: docker
+  tags:
+    - disruptive
