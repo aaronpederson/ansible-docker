@@ -6,7 +6,7 @@
 
 Tunables
 --------
-* ```docker_accepts_external_connections``` (boolean) - Allow connections to docker from other systems?
+* `docker_accepts_external_connections` (boolean) - Allow connections to docker from other systems?
 
 Dependencies
 ------------
@@ -25,5 +25,5 @@ License
 Contributors
 ------------
 * [Chris Olstrom](https://colstrom.github.io/) | [e-mail](mailto:chris@olstrom.com) | [Twitter](https://twitter.com/ChrisOlstrom)
-* Aaron Pederson
-* Justin Scott
+* [Aaron Pederson](https://aaronpederson.github.io) | [e-mail](mailto:aaronpederson@gmail.com) | [Twitter](https://twitter.com/GunFuSamurai) 
+* [Justin Scott](https://jvscott.net) | [e-mail](mailto:jvscott@gmail.com) | [Twitter](https://twitter.com/AKindlyOrc)
