@@ -1,6 +1,6 @@
 # ansible-docker
 
-[Docker](https://www.docker.com/) - Docker is an open platform for developers and sysadmins of distributed applications.
+[Docker](https://www.docker.com/) - is an open platform for developers and sysadmins of distributed applications.
 
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
