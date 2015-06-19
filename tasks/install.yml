@@ -3,7 +3,7 @@
   apt:
     state: latest
     pkg: lxc-docker
-  notify: Start Service | Docker
+  notify: Start Service | docker
   tags:
     - software-installation
     - using-apt
