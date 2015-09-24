@@ -10,6 +10,9 @@
     regexp: '^DEFAULT_FORWARD_POLICY='
     line: 'DEFAULT_FORWARD_POLICY=\"ACCEPT\"'
   when: ufw_default_exists.stat.exists
+  tags:
+  - docker
+  - ufw
 
 - name: Configure | Allow External Connections
   lineinfile:
@@ -17,6 +20,6 @@
     regexp: 'DOCKER_OPTS='
     line: 'DOCKER_OPTS="-H unix:///var/run/docker.sock -H 0.0.0.0:2375"'
   when: docker_accepts_external_connections
-  notify: Reload Service | docker
+  notify: service | docker | reloaded
   tags:
-    - docker
+  - docker
