@@ -4,19 +4,25 @@
 
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
-Tunables
---------
-* ```docker_accepts_external_connections``` (boolean) - Allow connections to docker from other systems?
+## Tunables
+  * ```docker_accepts_external_connections``` (boolean) - Allow connections to docker from other systems?
 
-Dependencies
-------------
-* [telusdigital.apt-repository](https://github.com/telusdigital/ansible-apt-repository/)
+## Handlers
+This role provides the following handlers:
 
-Example Playbook
-----------------
+  * `service | docker | started`
+  * `service | docker | stopped`
+  * `service | docker | restarted`
+  * `service | docker | reloaded`
+
+## Dependencies
+  * [colstrom.apt-repository](https://github.com/colstrom/ansible-apt-repository/)
+
+# Example Playbook
     - hosts: servers
       roles:
-         - role: telusdigital.docker
+       - role: colstrom.docker
+         docker_accepts_external_connections: yes
 
 License
 -------
@@ -24,6 +30,6 @@ License
 
 Contributors
 ------------
-* [Chris Olstrom](https://colstrom.github.io/) | [e-mail](mailto:chris@olstrom.com) | [Twitter](https://twitter.com/ChrisOlstrom)
-* Aaron Pederson
-* Justin Scott
+  * [Chris Olstrom](https://colstrom.github.io/) | [e-mail](mailto:chris@olstrom.com) | [Twitter](https://twitter.com/ChrisOlstrom)
+  * Aaron Pederson
+  * Justin Scott
