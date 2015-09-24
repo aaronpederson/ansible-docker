@@ -1,15 +1,15 @@
 ---
 dependencies:
-  - role: colstrom.apt-repository
-    repository_key: "0xf76221572c52609d"
-    repository_url: "deb https://apt.dockerproject.org/repo ubuntu-trusty main"
+- role: colstrom.apt-repository
+  repository_key: "0xf76221572c52609d"
+  repository_url: "deb https://apt.dockerproject.org/repo ubuntu-trusty main"
 galaxy_info:
   author: "Chris Olstrom"
   description: "Docker is an open platform for developers and sysadmins of distributed applications."
   license: MIT
   platforms:
-    - name: Ubuntu
-      versions:
-      - trusty
+  - name: Ubuntu
+    versions:
+    - trusty
   categories:
-    - system
+  - system
