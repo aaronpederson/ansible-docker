@@ -2,7 +2,7 @@
 - name: Install Docker
   apt:
     state: latest
-    pkg: lxc-docker
+    name: lxc-docker
   notify: Start Service | docker
   tags:
     - software-installation
