@@ -4,15 +4,15 @@
     name: docker
     state: started
 
-- name: service | docker | reloaded
-  service:
-    name: docker
-    state: reloaded
-
 - name: service | docker | stopped
   service:
     name: docker
     state: stopped
+
+- name: service | docker | reloaded
+  service:
+    name: docker
+    state: reloaded
 
 - name: service | docker | restarted
   service:
