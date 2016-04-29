@@ -6,7 +6,7 @@ driver:
 provisioner:
   name: ansible_playbook
   hosts: test-kitchen
-  requirements_path: dependencies.yml
+  requirements_path: requirements.yml
 
 platforms:
   - name: ubuntu-14.04
