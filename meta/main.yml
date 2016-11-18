@@ -1,8 +1,4 @@
 ---
-dependencies:
-  - role: telusdigital.apt-repository
-    repository_key: "0xd8576a8ba88d21e9"
-    repository_url: "deb http://get.docker.io/ubuntu docker main"
 galaxy_info:
   author: "Chris Olstrom"
   company: "TELUS digital"

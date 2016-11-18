@@ -1,10 +1,11 @@
 ---
 - name: Start Service | docker
   service:
-    state: started
     name: docker
+    state: started
+    enabled: yes
 
 - name: Reload Service | docker
   service:
-    state: reloaded
     name: docker
+    state: reloaded

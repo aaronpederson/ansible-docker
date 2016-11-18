@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'ansible-docker::default' do
 
-  describe package('lxc-docker') do
+  describe package('docker') do
     it { should be_installed.by('apt') }
   end
 
@@ -16,6 +16,7 @@ describe 'ansible-docker::default' do
 
   describe service('docker') do
     it { should be_running }
+    it { should be_enabled }
   end
 
 end
