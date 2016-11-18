@@ -31,7 +31,7 @@
 - name: Install Docker
   become: yes
   apt: name=docker-engine state=latest update_cache=yes
-  notify: service | docker | started
+  notify: Start Service | docker
   tags:
     - software-installation
     - using-apt
