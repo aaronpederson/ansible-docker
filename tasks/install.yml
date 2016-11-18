@@ -22,7 +22,6 @@
     - linux-image-extra-virtual
     - libsystemd-journal0
     - aufs-tools
-    - cgroupfs-mount
     - cgroup-lite
 
 - name: Add docker repository sources list
