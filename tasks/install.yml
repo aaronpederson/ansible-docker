@@ -1,21 +1,17 @@
 ---
 - name: Update apt sources
-  become: yes
   apt: name={{ item }} state=latest update_cache=yes
   with_items:
     - apt-transport-https
     - ca-certificates
 
 - name: Add new GPG key
-  become: yes
   apt_key: keyserver=hkp://ha.pool.sks-keyservers.net:80 id=58118E89F3A912897C070ADBF76221572C52609D state=present
 
 - name: Add ubuntu repository sources list
-  become: yes
   apt_repository: repo='deb http://cz.archive.ubuntu.com/ubuntu trusty main' state=present
 
 - name: Install prerequisites
-  become: yes
   apt: name={{ item }} state=latest update_cache=yes
   with_items:
     - linux-image-extra-{{ ansible_kernel }}
@@ -25,11 +21,9 @@
     - cgroup-lite
 
 - name: Add docker repository sources list
-  become: yes
   apt_repository: repo='deb https://apt.dockerproject.org/repo ubuntu-trusty main' state=present
 
 - name: Install Docker
-  become: yes
   apt: name=docker-engine state=latest update_cache=yes
   notify: Start Service | docker
   tags:
