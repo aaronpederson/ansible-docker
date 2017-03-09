@@ -1,2 +1,2 @@
 ---
-docker_accepts_external_connections: yes
+docker_accepts_external_connections: no
